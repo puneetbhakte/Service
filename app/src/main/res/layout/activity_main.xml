@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service"
+        android:textSize="28sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/four_ground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fourground Service"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back_ground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Background Sevice"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/four_ground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
