@@ -19,6 +19,9 @@ class BackgroundService: Service() {
         player.isLooping = true
         player.start()
         return START_STICKY
+
+        // call stop self to stop the service.
+        // stopSelf()
     }
 
     override fun onDestroy() {
